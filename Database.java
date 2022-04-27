@@ -20,7 +20,7 @@ public class Database {
 	public Connection connection() throws InstantiationException, IllegalAccessException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
-			this.connect_db = DriverManager.getConnection(url, "root", "password");
+			this.connect_db = DriverManager.getConnection(url, "root", "password"); // use your database username and password here
 		} catch (SQLException | ClassNotFoundException e) {
 			if (e instanceof SQLException) {
 				System.out.println("SQLException: " + e.getMessage());
