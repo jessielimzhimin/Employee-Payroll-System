@@ -32,6 +32,11 @@ Admin GUI consists of the following features:
 
 This GUI is used to display Salary to employee after user key in his/her ID in the Login GUI. It has the 'print' button that allow user to print the salary slip to PDF. 
 
+### Database
+All the functions that used to manipulate data in the database are defined in *Database.java*, change the username and password in the source code to your database's username and password. 
+```
+this.connect_db = DriverManager.getConnection(url, "root", "password");
+```
 ### Requirements
 In order to run this application, you will need to install MySQL and its workbench to create a database to store employees' information. You can use other method to create the database and table, but MySQL workbench is the most convienient to do so. Following picture shows the column name in the employee table.
 ![](Images/Column%20Name.PNG)
